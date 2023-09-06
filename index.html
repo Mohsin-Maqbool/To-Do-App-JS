@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="./images/icon.jpg" type="image/x-icon">
+<style>
+    li{
+        list-style: none;
+    }
+    body {
+    background-color: #101010;
+    color: white;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="mx-auto mt-5 text-center">
+                <h1>To-Do App</h1>
+            </div>
+
+            <div class="mx-auto mt-5" style="max-width: 700px;">
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control " placeholder="Enter Your Item..."
+                        aria-label="Recipient's username" id="username" aria-describedby="button-addon2">
+                    <button class="btn text-light btn-info" onclick="foo()" type="button" id="adduser">Add Item</button>
+                    <button class="btn btn-danger" type="button" id="deleteall" onclick="deleteall()">Delete All</button>
+                </div>
+
+                <div class="display">
+                    <table class="table" id="ul">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Your Task</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <!-- Sample Row -->
+                        <tbody id="li">
+                            <tr>
+                                <th  scope="row">1</th>
+                                <td>e.g Daily Routine, Add Things Before Going to Market</td>
+                                <td><i class=" btn text-light  fa fa-edit btn-info  mx-2"></i> <i
+                                        class="btn btn-danger text-light fa fa-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
