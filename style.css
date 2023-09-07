@@ -1,0 +1,73 @@
+
+body {
+    background-color: #101010;
+    color: white;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+}
+
+
+@media (max-width: 360px) {
+  
+    body {
+        font-size: 14px;
+    }
+    .input-group {
+        padding: 10px;
+    }
+    
+     .btn {
+        font-size: 12px;
+    }
+
+   
+    .btn {
+        padding: 6px 12px; 
+        margin: 2px; 
+    }
+
+}
+
+
+@media (max-width: 280px) {
+  
+    body {
+        font-size: 10px;
+    }
+    .input-group {
+        padding: 2px;
+        font-size:6px ;
+    }
+    
+    /* .btn-danger {
+        display: none;
+    } */
+    .btn {
+        font-size: 12px;
+    }
+
+    /* Adjust padding and margin for buttons */
+    .btn {
+        padding: 3px 6px; 
+        margin: 1px; 
+    }
+    ::placeholder{
+        font-size: 10px;
+    }
+    /* #routine{
+        .btn {
+            font-size: 10px;
+        }
+    
+        .btn {
+            padding: 2px 4px;
+            margin: 1px; 
+        }
+    } */
+}
+
+
